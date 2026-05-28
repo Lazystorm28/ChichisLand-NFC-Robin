@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="manifest" href="manifest.json">
+
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+<style>
+body{
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+img{
+width:300px;
+}
+</style>
+
+</head>
+
+<body>
+
+<img src="images/db1.png">
+
+</body>
+</html>
