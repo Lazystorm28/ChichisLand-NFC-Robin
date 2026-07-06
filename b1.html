@@ -3,6 +3,8 @@
 
 <head>
 
+<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="manifest" href="manifest.json">
@@ -11,7 +13,7 @@
 
 <script>
 if ('serviceWorker' in navigator) {
-navigator.serviceWorker.register('service-worker.js');
+    navigator.serviceWorker.register('service-worker.js');
 }
 </script>
 
@@ -20,6 +22,13 @@ navigator.serviceWorker.register('service-worker.js');
 <body>
 
 <img src="images/b1.png">
+
+<script>
+
+// Enregistre que le joueur a trouvé A1
+localStorage.setItem("B1","true");
+
+</script>
 
 </body>
 
