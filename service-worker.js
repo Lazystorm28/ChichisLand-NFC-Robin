@@ -1,9 +1,10 @@
-const CACHE_NAME = "robin-nfc-cache";
+const CACHE_NAME = "robin-nfc-cache-v2";
 
 const urlsToCache = [
 
 "/",
 
+"index.html",
 "/style.css",
 
 "/a1.html",
@@ -29,6 +30,8 @@ const urlsToCache = [
 "/c4.html",
 "/d4.html",
 "/e4.html",
+
+"/images/accueil.png",
 
 "/images/a1.png",
 "/images/b1.png",
