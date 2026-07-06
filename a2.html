@@ -3,9 +3,19 @@
 
 <head>
 
+<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="manifest" href="manifest.json">
+
 <link rel="stylesheet" href="style.css">
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
 
 </head>
 
@@ -13,20 +23,20 @@
 
 <img id="image" src="images/a2.png" style="display:none;">
 
-<h1 id="message" style="color:white;"></h1>
+<h1 id="message" style="color:white;text-align:center;"></h1>
 
 <script>
 
 if(localStorage.getItem("A1")){
 
-document.getElementById("image").style.display = "block";
+    document.getElementById("image").style.display = "block";
 
-localStorage.setItem("A2", "true");
+    localStorage.setItem("A2","true");
 
 }else{
 
-document.getElementById("message").innerHTML =
-"Vous devez trouver A1 avant.";
+    document.getElementById("message").innerHTML =
+    "Vous devez trouver A1 avant de pouvoir accéder à cette image.";
 
 }
 
